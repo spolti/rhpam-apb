@@ -1,8 +1,3 @@
----
-- name: "[TEST] Provision ImageStreams"
-  include_tasks: imagestreams.yml
-  vars:
-    state: present
 
 - name: "[TEST] Start tests"
   include_tasks: test_plan.yml
@@ -17,7 +12,4 @@
   loop_control:
     loop_var: plan_id
 
-- name: "[TEST] Deprovision ImageStreams"
-  include_tasks: imagestreams.yml
-  vars:
-    state: absent
+

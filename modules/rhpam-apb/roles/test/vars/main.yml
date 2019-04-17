@@ -1,32 +1,32 @@
 provision_failed: false
-apb_image_stream_tag: 1.0
-image_stream_namespace: '{{ namespace }}'
+apb_image_stream_tag: 1.1
+image_stream_namespace: rhpam-apb
 image_registry: registry.access.redhat.com
 image_streams:
   - {
-      name: "rhpam76-businesscentral-openshift",
+      name: "rhpam74-businesscentral-openshift",
       version: "{{ apb_image_stream_tag }}",
-      image_ref: "{{ image_registry }}/rhpam-7/rhpam76-businesscentral-openshift:{{ apb_image_stream_tag }}"
+      image_ref: "{{ image_registry }}/rhpam-7/rhpam74-businesscentral-openshift:{{ apb_image_stream_tag }}"
     }
   - {
-      name: "rhpam76-businesscentral-monitoring-openshift",
+      name: "rhpam74-businesscentral-monitoring-openshift",
       version: "{{ apb_image_stream_tag }}",
-      image_ref: "{{ image_registry }}/rhpam-7/rhpam76-businesscentral-monitoring-openshift:{{ apb_image_stream_tag }}"
+      image_ref: "{{ image_registry }}/rhpam-7/rhpam74-businesscentral-monitoring-openshift:{{ apb_image_stream_tag }}"
     }
   - {
-      name: "rhpam76-controller-openshift",
+      name: "rhpam74-controller-openshift",
       version: "{{ apb_image_stream_tag }}",
-      image_ref: "{{ image_registry }}/rhpam-7/rhpam76-controller-openshift:{{ apb_image_stream_tag }}"
+      image_ref: "{{ image_registry }}/rhpam-7/rhpam74-controller-openshift:{{ apb_image_stream_tag }}"
     }
   - {
-      name: "rhpam76-kieserver-openshift",
+      name: "rhpam74-kieserver-openshift",
       version: "{{ apb_image_stream_tag }}",
-      image_ref: "{{ image_registry }}/rhpam-7/rhpam76-kieserver-openshift:{{ apb_image_stream_tag }}"
+      image_ref: "{{ image_registry }}/rhpam-7/rhpam74-kieserver-openshift:{{ apb_image_stream_tag }}"
     }
   - {
-      name: "rhpam76-smartrouter-openshift",
+      name: "rhpam74-smartrouter-openshift",
       version: "{{ apb_image_stream_tag }}",
-      image_ref: "{{ image_registry }}/rhpam-7/rhpam76-smartrouter-openshift:{{ apb_image_stream_tag }}"
+      image_ref: "{{ image_registry }}/rhpam-7/rhpam74-smartrouter-openshift:{{ apb_image_stream_tag }}"
     }
   - {
       name: "postgresql",

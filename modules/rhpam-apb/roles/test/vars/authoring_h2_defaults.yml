@@ -11,7 +11,7 @@ deployment_configs:
 
 secrets:
   - "{{ application_name }}-rhpamcentr"
-  - "{{ application_name }}-kieserver"
+  - "{{ application_name }}-kieserver-0"
 
 persistent_volume_claims:
   - { name: "{{ application_name }}-rhpamcentr-data", size: "{{ apb_businesscentral_volume_size }}" }

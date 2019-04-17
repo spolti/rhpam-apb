@@ -7,6 +7,10 @@ deployment_configs:
 
 secrets:
   - "{{ application_name }}-rhpamcentr"
-  - "{{ application_name }}-kieserver"
+  - "{{ application_name }}-kieserver-0"
 
 persistent_volume_claims: []
+apb_kieserver_image_stream_name: rhpam74-kieserver-openshift
+businesscentral_image_name: rhpam74-businesscentral-openshift
+image_stream_tag: 1.1
+
